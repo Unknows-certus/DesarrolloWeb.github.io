@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <div id="resultado"></div>
+    <script>
+      // Definición de una clase llamada Circle
+      class Circle {
+        // Definición de un método estático llamado calculateArea que calcula el área de un círculo
+        static calculateArea(radius) {
+          // Retorna el área del círculo utilizando la fórmula matemática π * r²
+          return Math.PI * radius ** 2;
+        }
+      }
+
+      // Llamar al método estático sin crear una instancia de la clase
+      const radius = 5; // Definición de la variable radius con un valor de 5, que representa el radio del círculo
+      const area = Circle.calculateArea(radius); // Llamada al método estático calculateArea de la clase Circle con el radio como argumento
+      console.log("El área del círculo es:", area); // Impresión del resultado del cálculo del área del círculo
+      // Output: El área del círculo es: 78.53981633974483
+    </script>
+  </body>
+</html>
